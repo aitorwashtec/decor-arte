@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Decor’arte · Pintores en Pamplona · Pintura decorativa e industrial</title>
+<meta name="description" content="Pintura decorativa e industrial en Pamplona y comarca. Pisos, locales, naves y fachadas. Llama al 637 546 661 y pide presupuesto sin compromiso.">
+<link rel="canonical" href="https://decor-arte.com/">
+<meta property="og:url" content="https://decor-arte.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Decor’arte · Pintura decorativa e industrial en Pamplona">
+<meta property="og:description" content="Damos color a tus ideas. Pisos, locales, naves y fachadas en Pamplona y comarca. Presupuesto sin compromiso: 637 546 661.">
+<meta property="og:locale" content="es_ES">
+<meta name="theme-color" content="#3a3a46">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,600&family=Rye&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HousePainter",
+  "name": "Decor’arte",
+  "url": "https://decor-arte.com/",
+  "slogan": "Damos color a tus ideas",
+  "description": "Trabajos de pintura decorativa e industrial en Pamplona y comarca.",
+  "founder": { "@type": "Person", "name": "Carlos Aguilera Montoro" },
+  "telephone": "+34637546661",
+  "email": "carleteaguilera75@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Pamplona", "addressRegion": "Navarra", "addressCountry": "ES" },
+  "areaServed": ["Pamplona","Burlada","Villava","Barañáin","Zizur Mayor","Mutilva","Huarte","Berriozar","Ansoáin","Sarriguren"]
+}
+</script>
+<style>
+:root{
+  --paper:#f5f5fa; --paper-2:#eaeaf2; --sand:#e6dfce;
+  --ink:#22222c; --ink-soft:#555565; --line:#d8d8e3;
+  --band:#3a3a46; --band-ink:#f4f4f8;
+  --green:#17784a; --focus:#2f5fe0; --accent:#e8b923;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#16161c; --paper-2:#1f1f27; --sand:#23222a;
+    --ink:#ececf2; --ink-soft:#a8a8b8; --line:#33333f;
+    --band:#4c4c5e; --band-ink:#f6f6fa;
+    --green:#3cc88a; --focus:#ffd24a;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#16161c; --paper-2:#1f1f27; --sand:#23222a;
+  --ink:#ececf2; --ink-soft:#a8a8b8; --line:#33333f;
+  --band:#4c4c5e; --band-ink:#f6f6fa;
+  --green:#3cc88a; --focus:#ffd24a;
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 "Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;margin:0;line-height:1.05;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.wrap{max-width:70rem;margin:0 auto;padding-inline:1.25rem}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Cabecera */
+.top{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1.1rem}
+.who{font-weight:600}
+.top nav{display:flex;gap:1.6rem;font-size:.97rem;margin-left:auto}
+.top nav a{text-decoration:none;color:var(--ink-soft)}
+.top nav a:hover{color:var(--ink)}
+.tel{font-weight:600;text-decoration:none;border-bottom:2px solid var(--accent)}
+@media (max-width:760px){header{display:none}.hero{padding-top:1.5rem}}
+.minibar{position:fixed;top:0;left:0;right:0;z-index:30;padding-top:env(safe-area-inset-top,0px);background:var(--paper);border-bottom:1px solid var(--line);transform:translateY(-105%);transition:transform .3s ease}
+.minibar.on{transform:none}
+.minibar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.55rem}
+.mini-mark{font:400 1.35rem/1 "Rye","Rockwell",Georgia,serif;text-decoration:none}
+.btn.sm{padding:.55rem 1.1rem;font-size:.95rem}
+@media (min-width:761px){html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 4.5rem)}}
+@media (max-width:760px){.minibar{display:none}}
+@media (prefers-reduced-motion: reduce){.minibar{transition:none}}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.9rem 1.5rem;border-radius:999px;font:600 1rem/1 "Instrument Sans",system-ui,sans-serif;text-decoration:none;border:2px solid var(--band);cursor:pointer;background:transparent;color:var(--ink)}
+.btn.primary{background:var(--band);color:var(--band-ink)}
+.btn.wa{border-color:var(--green);color:var(--green)}
+.btn svg{width:1.15em;height:1.15em;flex:none}
+.ctas{display:flex;flex-wrap:wrap;gap:.75rem}
+
+/* Rodillo reutilizable: el borde derecho del cabezal marca hasta dónde llega la pintura */
+.roller{position:absolute;top:0;height:var(--rh,100%);aspect-ratio:210/140;left:calc(var(--r) * 100%);transform:translateX(-21%);pointer-events:none;z-index:3;filter:drop-shadow(0 4px 5px rgba(0,0,0,.28))}
+.roller svg{display:block;width:100%;height:100%}
+.stage{--r:1;--p:1;--paint:var(--band);position:relative;height:var(--h)}
+.js .hero-stage,.js .scroll-stage{--r:0;--p:0}
+.band{position:absolute;inset:0;container-type:inline-size;clip-path:inset(0 calc((1 - var(--p)) * 100%) 0 0)}
+.band-bg{position:absolute;inset:0;width:100%;height:100%;color:var(--band)}
+
+/* Hero */
+.hero{padding:.5rem 0 4.5rem}
+.hero-stage{--h:clamp(5.5rem,12vw + 3rem,12rem);margin-right:calc(var(--h) * 1.19)}
+.mark{position:absolute;inset:0;display:grid;place-content:center;text-align:center;color:var(--band-ink);padding-inline:4cqw}
+.mark b{display:block;font:400 11.2cqw/1 "Rye","Rockwell",Georgia,serif;letter-spacing:.01em}
+.mark i{display:block;margin-top:.55em;font:italic 600 4.6cqw/1.2 "Instrument Sans",system-ui,sans-serif}
+.hero-copy{margin-top:2.75rem;max-width:44rem}
+.js .hero-copy{opacity:0;transition:opacity .7s ease}
+.js .hero-copy.in{opacity:1}
+.hero h1{font-size:clamp(2.1rem,5.4vw,3.7rem);font-weight:800;max-width:17ch}
+.hero .lead{font-size:clamp(1.05rem,2vw,1.25rem);color:var(--ink-soft);max-width:38ch;margin:1.25rem 0 1.9rem}
+.textlink{display:inline-block;margin-top:1.4rem;font-weight:500;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;text-decoration-color:var(--accent)}
+
+/* Secciones */
+section{padding:4.75rem 0}
+section h2{font-size:clamp(1.9rem,4.2vw,2.9rem);font-weight:800;margin-bottom:.8rem}
+.intro{color:var(--ink-soft);max-width:50ch;margin-bottom:2.5rem}
+
+/* Servicios */
+.duo{display:grid;grid-template-columns:1fr 1fr;border-radius:14px;overflow:hidden}
+.panel{padding:2.4rem clamp(1.25rem,3vw,2.6rem) 1.6rem}
+.panel.deco{background:var(--paper-2)}
+.panel.indus{background:var(--band);color:var(--band-ink)}
+.panel h3{font-size:clamp(1.7rem,3vw,2.2rem);font-weight:800}
+.panel>p{margin:.6rem 0 1.6rem;max-width:34ch;opacity:.85}
+.panel ul{list-style:none;margin:0;padding:0}
+.panel li{padding:.95rem 0;border-top:1px solid rgba(128,128,140,.4);font-weight:600}
+.panel li span{display:block;font-weight:400;opacity:.78;font-size:.96rem}
+@media (max-width:760px){.duo{grid-template-columns:1fr}}
+
+/* Banda que se pinta al hacer scroll */
+.bandsec{padding:1rem 0 3rem}
+.scroll-stage{--h:clamp(5rem,9vw + 2rem,9rem);margin-right:calc(var(--h) * 1.19)}
+.big{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding-inline:5cqw;color:var(--band-ink);font:800 clamp(1.4rem,6.4cqw,3.6rem)/1.05 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.02em;text-wrap:balance}
+
+/* Probador de color */
+.tester{background:var(--sand)}
+.lab{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:2.5rem;align-items:start}
+.room{--r:-.7;--p:0;--paint:#efeae0;--rh:78%;position:relative;aspect-ratio:8/5;overflow:hidden;border-radius:12px;background:#d9d3c6}
+.wall-old,.wall-new{position:absolute;left:0;right:0;top:0;height:78%}
+.wall-old{background:#efeae0}
+.wall-new{background:#efeae0;clip-path:inset(0 calc((1 - var(--p)) * 100%) 0 0)}
+.fixtures{position:absolute;inset:0;width:100%;height:100%}
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;border:0;padding:0;margin:0 0 1.6rem}
+.sw{position:relative;display:block}
+.sw input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.sw span{display:block;aspect-ratio:1;border-radius:50%;background:var(--c);border:2px solid rgba(0,0,0,.16)}
+.sw input:checked + span{outline:3px solid var(--ink);outline-offset:3px}
+.sw input:focus-visible + span{outline:3px solid var(--focus);outline-offset:3px}
+.cname{font:800 clamp(1.6rem,3vw,2.1rem)/1.1 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.02em}
+.cuse{color:var(--ink-soft);margin:.3rem 0 1.4rem}
+@media (max-width:860px){.lab{grid-template-columns:1fr;gap:1.75rem}}
+
+/* Trabajos */
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:13rem;grid-auto-flow:dense;gap:.75rem;margin:0;padding:0;list-style:none}
+.gallery li{position:relative;margin:0;border-radius:10px;overflow:hidden;background:var(--paper-2)}
+.gallery .wide{grid-column:span 2}
+.gallery .tall{grid-row:span 2}
+.gallery a{display:block;height:100%;color:#fff;text-decoration:none}
+.gallery img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.gallery a:hover img{transform:scale(1.04)}
+.gallery span{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .8rem .65rem;font-size:.92rem;font-weight:600;line-height:1.3;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+@media (max-width:860px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:11rem}}
+@media (max-width:480px){.gallery{grid-auto-rows:8.5rem}.gallery span{font-size:.8rem;padding:1.2rem .55rem .5rem}}
+@media (prefers-reduced-motion: reduce){.gallery img{transition:none}}
+.lightbox{border:0;padding:0;background:transparent;max-width:min(96vw,1600px);max-height:96vh;color:#fff}
+.lightbox::backdrop{background:rgba(10,10,14,.9)}
+.lightbox img{display:block;max-width:100%;max-height:calc(96vh - 4rem);margin:0 auto;border-radius:6px}
+.lightbox p{text-align:center;margin-top:.7rem;font-weight:600}
+.lb-btn{position:fixed;top:50%;transform:translateY(-50%);width:3rem;height:3rem;border-radius:50%;border:0;background:rgba(255,255,255,.16);color:#fff;font-size:1.6rem;line-height:1;cursor:pointer}
+.lb-prev{left:.75rem}.lb-next{right:.75rem}
+.lb-close{top:1rem;right:.75rem;transform:none}
+
+/* Proceso */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.75rem;counter-reset:s}
+.steps li{counter-increment:s;padding-top:1.1rem;border-top:5px solid var(--accent)}
+.steps li::before{content:counter(s);display:block;font:800 2.3rem/1 "Bricolage Grotesque",system-ui,sans-serif;margin-bottom:.6rem}
+.steps h3{font-size:1.2rem;font-weight:700;margin-bottom:.3rem}
+.steps p{color:var(--ink-soft);font-size:.98rem}
+@media (max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+/* Zona */
+.zona{background:var(--paper-2)}
+.towns{display:flex;flex-wrap:wrap;gap:.55rem;margin:0;padding:0;list-style:none}
+.towns li{border:1.5px solid var(--line);background:var(--paper);border-radius:999px;padding:.4rem .95rem;font-size:.97rem}
+.towns li.main{background:var(--band);color:var(--band-ink);border-color:var(--band);font-weight:600}
+
+/* Contacto */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
+.contact dl{margin:0}
+.contact dt{color:var(--ink-soft);font-size:.92rem;margin-top:1.3rem}
+.contact dd{margin:0;font:600 clamp(1.3rem,2.6vw,1.75rem)/1.25 "Bricolage Grotesque",system-ui,sans-serif;overflow-wrap:anywhere}
+.contact dd a{text-decoration:none}
+.contact .ctas{margin-top:1.8rem}
+form{display:grid;gap:1rem;background:var(--paper-2);padding:1.6rem;border-radius:12px}
+label.f{display:grid;gap:.35rem;font-size:.93rem;font-weight:500}
+input.t,select,textarea{font:inherit;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:8px;padding:.7rem .8rem;width:100%}
+textarea{min-height:7rem;resize:vertical}
+form .btn{justify-self:start}
+@media (max-width:860px){.contact{grid-template-columns:1fr;gap:2.5rem}}
+
+.titan{margin-top:1.5rem;color:var(--ink-soft)}
+.titan b{color:var(--ink)}
+.ncs{font-size:.92rem;color:var(--ink-soft);margin:-1rem 0 1.4rem}
+.faq{max-width:48rem}
+.faq details{border-top:1px solid var(--line);padding:1.1rem 0}
+.faq details:last-of-type{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;font:700 1.15rem/1.3 "Bricolage Grotesque",system-ui,sans-serif}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;font-weight:400;font-size:1.6rem;line-height:1;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--ink-soft);margin-top:.6rem;max-width:60ch}
+.tips{background:var(--paper-2);padding:1.6rem;border-radius:12px}
+.tips h3{font-size:1.35rem;font-weight:700;margin-bottom:.8rem}
+.tips ul{margin:0;padding-left:1.15rem;color:var(--ink-soft)}
+.tips li{margin:.4rem 0}
+footer{border-top:1px solid var(--line);padding:2.5rem 0 6.5rem;color:var(--ink-soft);font-size:.93rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem}
+.foot-mark{font:400 1.5rem/1 "Rye","Rockwell",Georgia,serif;color:var(--ink)}
+
+/* Barra de contacto en móvil */
+.callbar{display:none}
+@media (max-width:760px){
+  .callbar{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:.7rem 1rem;padding-bottom:calc(.7rem + env(safe-area-inset-bottom,0px));background:var(--paper);border-top:1px solid var(--line)}
+  .callbar .btn{justify-content:center;padding:.85rem}
+  .callbar .btn.wa{background:var(--green);border-color:var(--green);color:#fff}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.js .hero-copy{transition:none}}
+</style>
+</head>
+<body>
+
+<!-- Símbolo del rodillo (inspirado en el logo de la tarjeta) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="rshade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000" stop-opacity=".38"/>
+      <stop offset=".3" stop-color="#fff" stop-opacity=".16"/>
+      <stop offset=".62" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".42"/>
+    </linearGradient>
+    <symbol id="roller" viewBox="0 0 210 140">
+      <rect x="2" y="0" width="42" height="140" rx="9" style="fill:var(--paint,#3a3a46)"/>
+      <rect x="2" y="0" width="42" height="140" rx="9" fill="url(#rshade)"/>
+      <path d="M44 118 H64 L104 64 H156" fill="none" stroke="#1d1d25" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M44 118 H64 L104 64 H156" fill="none" stroke="#dcdce6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="150" y="56" width="56" height="16" rx="8" fill="#2a2a33"/>
+    </symbol>
+    <filter id="rough" x="-3%" y="-12%" width="106%" height="124%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03 0.22" numOctaves="3" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="18" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap top">
+    <nav aria-label="Secciones">
+      <a href="#servicios">Servicios</a>
+      <a href="#colores">Colores</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<div class="minibar" id="minibar" inert>
+  <div class="wrap">
+    <a class="mini-mark" href="#">Decor’arte</a>
+    <div class="ctas">
+      <a class="btn primary sm" href="tel:+34637546661">Llamar</a>
+      <a class="btn wa sm" href="https://wa.me/34637546661?text=Hola%20Carlos%2C%20querr%C3%ADa%20pedir%20un%20presupuesto%20de%20pintura.">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div class="stage hero-stage">
+      <div class="band">
+        <svg class="band-bg" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true">
+          <rect x="8" y="10" width="990" height="180" fill="currentColor" filter="url(#rough)"/>
+        </svg>
+        <div class="mark" role="img" aria-label="Decor’arte. Damos color a tus ideas">
+          <b>DECOR’ARTE</b>
+          <i>Damos color a tus ideas</i>
+        </div>
+      </div>
+      <div class="roller" aria-hidden="true"><svg viewBox="0 0 210 140"><use href="#roller"/></svg></div>
+    </div>
+
+    <div class="hero-copy">
+      <h1>Pintura decorativa e industrial en Pamplona</h1>
+      <p class="lead">Pisos, locales, naves y fachadas con acabado limpio. Visitamos la obra sin compromiso y te damos el presupuesto antes de empezar.</p>
+      <div class="ctas">
+        <a class="btn primary" href="tel:+34637546661">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          Llamar al 637 546 661
+        </a>
+        <a class="btn wa" href="https://wa.me/34637546661?text=Hola%20Carlos%2C%20querr%C3%ADa%20pedir%20un%20presupuesto%20de%20pintura.">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+          Escribir por WhatsApp
+        </a>
+      </div>
+      <a class="textlink" href="#colores">Probar colores en una pared de ejemplo</a>
+    </div>
+  </div>
+</div>
+
+<section id="servicios" style="padding-top:1rem">
+  <div class="wrap">
+    <h2>Qué pintamos</h2>
+    <p class="intro">Desde un dormitorio hasta una nave entera. Protegemos suelos y muebles y lo dejamos todo recogido al terminar.</p>
+    <div class="duo">
+      <div class="panel deco">
+        <h3>Pintura decorativa</h3>
+        <p>Para viviendas, comunidades y locales que quieren verse bien.</p>
+        <ul>
+          <li>Pisos y viviendas<span>Paredes, techos y habitaciones completas.</span></li>
+          <li>Quitar gotelé y alisar<span>Paredes lisas listas para pintar.</span></li>
+          <li>Lacado de puertas y muebles<span>Renovar sin cambiar.</span></li>
+          <li>Papel pintado y estucos<span>Acabados con textura y carácter.</span></li>
+          <li>Fachadas y comunidades<span>Pintura exterior que aguanta el clima de Navarra.</span></li>
+        </ul>
+      </div>
+      <div class="panel indus">
+        <h3>Pintura industrial</h3>
+        <p>Para naves, talleres y obras donde el acabado tiene que aguantar.</p>
+        <ul>
+          <li>Naves y locales comerciales<span>Paredes y techos de gran superficie.</span></li>
+          <li>Suelos de resina y epoxi<span>Resistentes al tráfico y a la limpieza.</span></li>
+          <li>Estructuras metálicas<span>Protección contra óxido y desgaste.</span></li>
+          <li>Señalización de zonas<span>Líneas, pasillos y áreas de seguridad.</span></li>
+          <li>Mantenimiento periódico<span>Repasos para que todo siga como nuevo.</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="titan">Trabajamos con <b>pinturas Titan</b>: plásticas lavables, esmaltes y sistemas para fachada e industria.</p>
+  </div>
+</section>
+
+<div class="bandsec">
+  <div class="wrap">
+    <div class="stage scroll-stage">
+      <div class="band">
+        <svg class="band-bg" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true">
+          <rect x="8" y="10" width="990" height="180" fill="currentColor" filter="url(#rough)"/>
+        </svg>
+        <div class="big">Damos color a tus ideas</div>
+      </div>
+      <div class="roller" aria-hidden="true"><svg viewBox="0 0 210 140"><use href="#roller"/></svg></div>
+    </div>
+  </div>
+</div>
+
+<section id="colores" class="tester">
+  <div class="wrap">
+    <h2>Prueba un color en la pared</h2>
+    <p class="intro">Elige un tono y mira cómo queda. Cada color lleva su referencia para prepararlo en pintura Titan, y antes de decidir lo probamos con muestras reales en tu pared.</p>
+    <div class="lab">
+      <div class="room" id="room" role="img" aria-label="Salón de ejemplo con la pared en el color elegido">
+        <div class="wall-old" id="wallOld"></div>
+        <div class="wall-new" id="wallNew"></div>
+        <svg class="fixtures" viewBox="0 0 800 500" aria-hidden="true">
+          <defs>
+            <linearGradient id="fl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c49b6e"/><stop offset="1" stop-color="#9c7650"/></linearGradient>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4eaf7"/><stop offset="1" stop-color="#f3f8fb"/></linearGradient>
+          </defs>
+          <rect y="390" width="800" height="110" fill="url(#fl)"/>
+          <path d="M0 422H800M0 456H800M0 488H800" stroke="#00000024" stroke-width="2"/>
+          <rect y="372" width="800" height="18" fill="#f6f4ef"/>
+          <ellipse cx="290" cy="450" rx="270" ry="30" fill="#e9e3d6"/>
+          <rect x="584" y="60" width="180" height="220" rx="4" fill="#fbfbfb"/>
+          <rect x="596" y="72" width="76" height="96" fill="url(#sky)"/><rect x="676" y="72" width="76" height="96" fill="url(#sky)"/>
+          <rect x="596" y="172" width="76" height="96" fill="url(#sky)"/><rect x="676" y="172" width="76" height="96" fill="url(#sky)"/>
+          <rect x="576" y="280" width="196" height="10" rx="3" fill="#fff"/>
+          <rect x="220" y="80" width="140" height="104" fill="#2d2d36"/><rect x="228" y="88" width="124" height="88" fill="#f4f1ea"/>
+          <circle cx="275" cy="130" r="22" fill="#d9a441" opacity=".9"/><rect x="298" y="112" width="40" height="52" fill="#4c6a7d" opacity=".85"/>
+          <path d="M536 222V376" stroke="#2d2d36" stroke-width="5"/>
+          <path d="M510 222 L522 168 H550 L562 222Z" fill="#f2e6c9"/>
+          <ellipse cx="536" cy="378" rx="22" ry="6" fill="#2d2d36"/>
+          <ellipse cx="290" cy="392" rx="225" ry="12" fill="#00000026"/>
+          <rect x="96" y="268" width="388" height="92" rx="26" fill="#474a59"/>
+          <rect x="72" y="312" width="436" height="64" rx="20" fill="#575b6d"/>
+          <rect x="110" y="288" width="170" height="64" rx="14" fill="#666a7e"/><rect x="296" y="288" width="170" height="64" rx="14" fill="#666a7e"/>
+          <rect x="96" y="372" width="12" height="18" fill="#2d2d36"/><rect x="472" y="372" width="12" height="18" fill="#2d2d36"/>
+        </svg>
+        <div class="roller" aria-hidden="true"><svg viewBox="0 0 210 140"><use href="#roller"/></svg></div>
+      </div>
+
+      <div>
+        <fieldset class="swatches" id="swatches">
+          <legend class="vh">Elige un color</legend>
+        </fieldset>
+        <p class="cname" id="cname" aria-live="polite">Blanco Ciudadela</p>
+        <p class="cuse" id="cuse">Salones y techos</p>
+        <p class="ncs" id="cncs">Referencia NCS aproximada: S 0505-Y20R</p>
+        <a class="btn wa" id="cta" href="https://wa.me/34637546661">Quiero este color</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trabajos">
+  <div class="wrap">
+    <h2>Trabajos realizados</h2>
+    <p class="intro">Obras reales de Carlos: viviendas, locales y fachadas. Pulsa una foto para verla en grande.</p>
+    <ul class="gallery" id="gallery">
+      <li class="wide tall"><a href="fotos/fachada-local.webp"><img src="fotos/fachada-local-s.webp" width="800" height="450" loading="lazy" alt="Fachada de un edificio comercial pintada en terracota con molduras y recercados en blanco"><span>Fachada de local comercial</span></a></li>
+      <li class="tall"><a href="fotos/puerta-madera-entrada.webp"><img src="fotos/puerta-madera-entrada-s.webp" width="600" height="800" loading="lazy" alt="Puerta de entrada pintada con efecto de veta de madera y acabado brillante"><span>Puerta de entrada con efecto madera</span></a></li>
+      <li><a href="fotos/salon-rayas-gris.webp"><img src="fotos/salon-rayas-gris-s.webp" width="800" height="525" loading="lazy" alt="Salón con paredes grises y una pared de rayas verticales en gris y blanco"><span>Salón con pared de rayas</span></a></li>
+      <li><a href="fotos/dormitorio-rayas-beige.webp"><img src="fotos/dormitorio-rayas-beige-s.webp" width="800" height="450" loading="lazy" alt="Dormitorio con rayas verticales pintadas en beige, blanco y plata detrás del cabecero"><span>Dormitorio con rayas en beige y plata</span></a></li>
+      <li><a href="fotos/techo-damero.webp"><img src="fotos/techo-damero-s.webp" width="800" height="450" loading="lazy" alt="Local con techo de placas en damero azul y blanco y paredes en gris oscuro"><span>Techo en damero azul y blanco</span></a></li>
+      <li class="tall"><a href="fotos/puerta-madera-interior.webp"><img src="fotos/puerta-madera-interior-s.webp" width="600" height="800" loading="lazy" alt="Puerta vista desde dentro, pintada con efecto de veta de madera"><span>Puerta con efecto madera, interior</span></a></li>
+      <li class="wide"><a href="fotos/local-turquesa.webp"><img src="fotos/local-turquesa-s.webp" width="800" height="450" loading="lazy" alt="Local amplio con paredes turquesa y un cajón de techo en gris"><span>Local en turquesa con techo en gris</span></a></li>
+      <li><a href="fotos/pared-damasco.webp"><img src="fotos/pared-damasco-s.webp" width="800" height="450" loading="lazy" alt="Pared de dormitorio con motivo damasco en tonos crema"><span>Pared con motivo damasco</span></a></li>
+      <li><a href="fotos/techo-mural.webp"><img src="fotos/techo-mural-s.webp" width="800" height="450" loading="lazy" alt="Techo de un local con un mural espacial enmarcado"><span>Techo con mural decorativo</span></a></li>
+      <li class="wide"><a href="fotos/local-lineas-negras.webp"><img src="fotos/local-lineas-negras-s.webp" width="800" height="450" loading="lazy" alt="Local comercial blanco con líneas negras pintadas que recorren paredes y techo"><span>Local con líneas negras en paredes y techo</span></a></li>
+      <li><a href="fotos/dormitorio-rayas-horizontales.webp"><img src="fotos/dormitorio-rayas-horizontales-s.webp" width="800" height="525" loading="lazy" alt="Habitación con una pared de franjas horizontales en gris y blanco"><span>Franjas horizontales en gris y blanco</span></a></li>
+    </ul>
+    <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+      <img id="lbImg" alt="">
+      <p id="lbCap"></p>
+      <button class="lb-btn lb-prev" id="lbPrev" type="button" aria-label="Foto anterior">‹</button>
+      <button class="lb-btn lb-next" id="lbNext" type="button" aria-label="Foto siguiente">›</button>
+      <button class="lb-btn lb-close" id="lbClose" type="button" aria-label="Cerrar">×</button>
+    </dialog>
+  </div>
+</section>
+
+<section id="como" style="padding-top:1rem">
+  <div class="wrap">
+    <h2>Así trabajamos</h2>
+    <p class="intro">Sin sorpresas: sabes qué se va a hacer, cuánto cuesta y cuándo termina.</p>
+    <ol class="steps">
+      <li><h3>Visita</h3><p>Vamos a ver la obra y hablamos de lo que necesitas.</p></li>
+      <li><h3>Presupuesto</h3><p>Te lo damos por escrito y con precio cerrado.</p></li>
+      <li><h3>Pintura</h3><p>Protegemos todo, pintamos y te avisamos de cada avance.</p></li>
+      <li><h3>Entrega</h3><p>Limpiamos, revisamos juntos y repasamos lo que haga falta.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="zona" class="zona">
+  <div class="wrap">
+    <h2>Pamplona y toda la comarca</h2>
+    <p class="intro">Trabajamos en Pamplona y alrededores. Si estás un poco más lejos, pregúntanos.</p>
+    <ul class="towns">
+      <li class="main">Pamplona</li><li>Burlada</li><li>Villava</li><li>Barañáin</li><li>Zizur Mayor</li>
+      <li>Mutilva</li><li>Huarte</li><li>Berriozar</li><li>Ansoáin</li><li>Sarriguren</li>
+    </ul>
+  </div>
+</section>
+
+<section id="preguntas" style="padding-top:1rem">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <p class="intro">Lo que más nos preguntan antes de pedir presupuesto.</p>
+    <div class="faq">
+      <details><summary>¿Cuánto cuesta pintar un piso en Pamplona?</summary><p>Depende de los metros, del estado de las paredes y de si hay que quitar gotelé. Por eso vamos a verlo y te damos un precio cerrado por escrito, sin compromiso.</p></details>
+      <details><summary>¿Tengo que vaciar las habitaciones?</summary><p>No. Movemos y cubrimos los muebles, protegemos suelos, enchufes y marcos, y al terminar lo dejamos todo en su sitio.</p></details>
+      <details><summary>¿Cuánto se tarda?</summary><p>Depende del tamaño y de la preparación que necesiten las paredes. En el presupuesto te damos fechas concretas de inicio y de entrega.</p></details>
+      <details><summary>¿Qué pintura utilizáis?</summary><p>Trabajamos con pinturas Titan, elegidas según el trabajo: plásticas lavables para interiores, esmaltes para puertas y metal, y sistemas específicos para fachadas y suelos industriales.</p></details>
+      <details><summary>¿Podéis pintar un local o una nave sin cerrar el negocio?</summary><p>Sí. Nos adaptamos a tus horarios y organizamos el trabajo por zonas para que puedas seguir abierto.</p></details>
+    </div>
+  </div>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"¿Cuánto cuesta pintar un piso en Pamplona?","acceptedAnswer":{"@type":"Answer","text":"Depende de los metros, del estado de las paredes y de si hay que quitar gotelé. Vamos a verlo y te damos un precio cerrado por escrito, sin compromiso."}},
+    {"@type":"Question","name":"¿Tengo que vaciar las habitaciones?","acceptedAnswer":{"@type":"Answer","text":"No. Movemos y cubrimos los muebles, protegemos suelos, enchufes y marcos, y al terminar lo dejamos todo en su sitio."}},
+    {"@type":"Question","name":"¿Qué pintura utilizáis?","acceptedAnswer":{"@type":"Answer","text":"Trabajamos con pinturas Titan, elegidas según el trabajo."}}
+  ]}
+  </script>
+</section>
+
+<section id="contacto">
+  <div class="wrap contact">
+    <div>
+      <h2>Pide presupuesto</h2>
+      <p class="intro" style="margin-bottom:0">Gratis y sin compromiso. Lo más rápido es llamar o escribir por WhatsApp.</p>
+      <dl>
+        <dt>Contacto</dt><dd>Carlos Aguilera Montoro</dd>
+        <dt>Teléfono y WhatsApp</dt><dd><a href="tel:+34637546661">637 546 661</a></dd>
+        <dt>Correo</dt><dd><a href="mailto:carleteaguilera75@gmail.com">carleteaguilera75@gmail.com</a></dd>
+      </dl>
+      <div class="ctas">
+        <a class="btn primary" href="tel:+34637546661">Llamar</a>
+        <a class="btn wa" href="https://wa.me/34637546661">WhatsApp</a>
+      </div>
+    </div>
+    <div class="tips">
+      <h3>Para darte precio antes</h3>
+      <p style="color:var(--ink-soft);margin-bottom:.6rem">Si escribes por WhatsApp, mándanos:</p>
+      <ul>
+        <li>Fotos de las paredes, techos o fachada.</li>
+        <li>Metros aproximados o número de habitaciones.</li>
+        <li>Barrio o localidad.</li>
+        <li>Si hay gotelé, humedades o desconchones.</li>
+        <li>Cuándo te vendría bien empezar.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="foot-mark">Decor’arte</span>
+    <span>Carlos Aguilera Montoro, pintura decorativa e industrial en Pamplona</span>
+    <span>Aviso legal y privacidad</span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn primary" href="tel:+34637546661">Llamar</a>
+  <a class="btn wa" href="https://wa.me/34637546661">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ease = function(t){ return t < .5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3)/2; };
+
+  function tween(ms, step, done){
+    if(reduce){ step(1); if(done) done(); return; }
+    var t0 = performance.now();
+    function f(now){
+      var t = Math.min(1, (now - t0)/ms);
+      step(ease(t));
+      if(t < 1) requestAnimationFrame(f); else if(done) done();
+    }
+    requestAnimationFrame(f);
+  }
+  function setStage(el, r){
+    el.style.setProperty('--r', r);
+    el.style.setProperty('--p', Math.max(0, Math.min(1, r)));
+  }
+
+  /* 1. Hero: el rodillo pinta el logo */
+  var hero = document.querySelector('.hero-stage');
+  var copy = document.querySelector('.hero-copy');
+  setStage(hero, 0);
+  var ready = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+  var started = false;
+  function runHero(){
+    if(started) return; started = true;
+    setTimeout(function(){
+      tween(2000, function(v){ setStage(hero, v); if(v > .55) copy.classList.add('in'); }, function(){ copy.classList.add('in'); });
+    }, 250);
+  }
+  ready.then(runHero);
+  setTimeout(runHero, 1500);
+
+  /* 2. Banda: el rodillo avanza con el scroll */
+  var sb = document.querySelector('.scroll-stage');
+  var tick = false;
+  function onScroll(){
+    var r = sb.getBoundingClientRect(), vh = window.innerHeight;
+    var p = reduce ? 1 : (0.92*vh - r.top)/(0.5*vh);
+    setStage(sb, Math.max(0, Math.min(1, p)));
+  }
+  addEventListener('scroll', function(){
+    if(tick) return; tick = true;
+    requestAnimationFrame(function(){ tick = false; onScroll(); });
+  }, {passive:true});
+  addEventListener('resize', onScroll);
+  onScroll();
+
+  /* Barra compacta con el logo y los botones al pasar la portada (solo escritorio) */
+  var mini = document.getElementById('minibar');
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      var e = es[0], on = !e.isIntersecting && e.boundingClientRect.top < 0;
+      mini.classList.toggle('on', on); mini.inert = !on;
+    }).observe(hero);
+  }
+
+  /* 3. Probador de color */
+  var colors = [
+    {n:'Blanco Ciudadela', h:'#efeae0', u:'Salones y techos',         c:'S 0505-Y20R'},
+    {n:'Arena Bardenas',   h:'#d8c3a0', u:'Pasillos y zonas de paso', c:'S 1515-Y20R'},
+    {n:'Ocre Estafeta',    h:'#c9a25a', u:'Fachadas cálidas',         c:'S 2040-Y10R'},
+    {n:'Verde Irati',      h:'#4d6b53', u:'Estudios y despachos',     c:'S 6020-G10Y'},
+    {n:'Salvia Taconera',  h:'#9fb09a', u:'Dormitorios',              c:'S 3010-G30Y'},
+    {n:'Rojo Txupinazo',   h:'#9c4a3c', u:'Paredes de acento',        c:'S 4050-Y80R'},
+    {n:'Gris Arga',        h:'#56657a', u:'Puertas y lacados',        c:'S 5010-R90B'},
+    {n:'Azul Aralar',      h:'#2f4f7a', u:'Salones con carácter',     c:'S 6030-R80B'}
+  ];
+  var room = document.getElementById('room');
+  var wallOld = document.getElementById('wallOld');
+  var wallNew = document.getElementById('wallNew');
+  var group = document.getElementById('swatches');
+  var cname = document.getElementById('cname');
+  var cuse = document.getElementById('cuse');
+  var cta = document.getElementById('cta');
+  var cncs = document.getElementById('cncs');
+  var current = colors[0], shown = colors[0], busy = false, pending = null;
+
+  colors.forEach(function(c, i){
+    var l = document.createElement('label');
+    l.className = 'sw'; l.title = c.n;
+    l.innerHTML = '<input type="radio" name="color" value="'+i+'" aria-label="'+c.n+'"'+(i===0?' checked':'')+'><span style="--c:'+c.h+'"></span>';
+    group.appendChild(l);
+  });
+
+  function label(c){
+    cname.textContent = c.n; cuse.textContent = c.u;
+    cncs.textContent = 'Referencia NCS aproximada: ' + c.c;
+    cta.href = 'https://wa.me/34637546661?text=' + encodeURIComponent('Hola Carlos, me gustaría pintar de ' + c.n + '. ¿Me puedes hacer un presupuesto?');
+  }
+  function paintTo(c){
+    if(busy){ pending = c; return; }
+    if(c.h === shown.h){ return; }
+    busy = true;
+    room.style.setProperty('--paint', c.h);
+    wallNew.style.background = c.h;
+    tween(2300, function(v){ setStage(room, -0.7 + v*1.9); }, function(){
+      wallOld.style.background = c.h; shown = c;
+      setStage(room, -0.7);
+      busy = false;
+      if(pending){ var n = pending; pending = null; paintTo(n); }
+    });
+  }
+  group.addEventListener('change', function(e){
+    var c = colors[+e.target.value];
+    current = c; label(c); paintTo(c);
+  });
+  label(colors[0]);
+
+  /* 4. Galería: ver foto en grande */
+  var lb = document.getElementById('lightbox');
+  if(lb && lb.showModal){
+    var links = [].slice.call(document.querySelectorAll('#gallery a'));
+    var lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap'), idx = 0;
+    function show(i){
+      idx = (i + links.length) % links.length;
+      var a = links[idx];
+      lbImg.src = a.getAttribute('href');
+      lbImg.alt = a.querySelector('img').alt;
+      lbCap.textContent = a.querySelector('span').textContent;
+    }
+    links.forEach(function(a, i){
+      a.addEventListener('click', function(e){ e.preventDefault(); show(i); lb.showModal(); });
+    });
+    document.getElementById('lbPrev').onclick = function(){ show(idx - 1); };
+    document.getElementById('lbNext').onclick = function(){ show(idx + 1); };
+    document.getElementById('lbClose').onclick = function(){ lb.close(); };
+    lb.addEventListener('click', function(e){ if(e.target === lb) lb.close(); });
+    lb.addEventListener('keydown', function(e){
+      if(e.key === 'ArrowLeft') show(idx - 1);
+      if(e.key === 'ArrowRight') show(idx + 1);
+    });
+  }
+
+})();
+</script>
+</body>
+</html>
