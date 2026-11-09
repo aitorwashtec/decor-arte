@@ -241,7 +241,35 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
   .callbar .btn{justify-content:center;padding:.85rem}
   .callbar .btn.wa{background:var(--green);border-color:var(--green);color:#fff}
 }
-@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.js .hero-copy{transition:none}}
+.js .callbar{transform:translateY(110%);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.js .callbar.on{transform:none}
+
+/* Detalles de movimiento, discretos */
+.btn{transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease}
+@media (hover:hover){
+  .btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px -6px rgba(0,0,0,.35)}
+}
+.btn:active{transform:translateY(0);box-shadow:none}
+.top nav a{background:linear-gradient(var(--accent),var(--accent)) 0 100%/0 2px no-repeat;padding-bottom:3px;transition:background-size .25s ease,color .2s ease}
+.top nav a:hover{background-size:100% 2px}
+:root{interpolate-size:allow-keywords}
+.faq details::details-content{block-size:0;overflow:clip;transition:block-size .35s ease,content-visibility .35s allow-discrete}
+.faq details[open]::details-content{block-size:auto}
+.lightbox[open]{animation:lbin .25s ease}
+@keyframes lbin{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+
+/* Aparición suave al hacer scroll (solo con JS y sin "reducir movimiento") */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease var(--d,0ms),transform .7s ease var(--d,0ms)}
+.js .rv.in{opacity:1;transform:none}
+.js section h2.rv::after{content:"";display:block;width:3.2rem;height:5px;margin-top:.7rem;background:var(--accent);border-radius:3px;transform:scaleX(0);transform-origin:left;transition:transform .8s ease .25s}
+.js section h2.rv.in::after{transform:scaleX(1)}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}.js .hero-copy{transition:none}
+  .btn,.top nav a,.callbar,.js .callbar{transition:none}
+  .btn:hover{transform:none;box-shadow:none}
+  .lightbox[open]{animation:none}
+  .faq details::details-content{transition:none}
+}
 </style>
 </head>
 <body>
@@ -502,8 +530,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
         <dt>Correo</dt><dd><a href="mailto:info@decor-arte.com">info@decor-arte.com</a></dd>
       </dl>
       <div class="ctas">
-        <a class="btn primary" href="tel:+34637546661">Llamar</a>
-        <a class="btn wa" href="https://wa.me/34637546661">WhatsApp</a>
+        <a class="btn primary" href="tel:+34637546661"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Llamar</a>
+        <a class="btn wa" href="https://wa.me/34637546661?text=Hola%20Carlos%2C%20querr%C3%ADa%20pedir%20un%20presupuesto%20de%20pintura."><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg> WhatsApp</a>
       </div>
     </div>
     <div class="tips">
@@ -530,8 +558,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
 </footer>
 
 <div class="callbar">
-  <a class="btn primary" href="tel:+34637546661">Llamar</a>
-  <a class="btn wa" href="https://wa.me/34637546661">WhatsApp</a>
+  <a class="btn primary" href="tel:+34637546661"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Llamar</a>
+  <a class="btn wa" href="https://wa.me/34637546661?text=Hola%20Carlos%2C%20querr%C3%ADa%20pedir%20un%20presupuesto%20de%20pintura."><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg> WhatsApp</a>
 </div>
 
 <script>
@@ -644,6 +672,33 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
     current = c; label(c); paintTo(c);
   });
   label(colors[0]);
+
+  /* Barra de contacto móvil: solo cuando no hay otros botones de contacto a la vista */
+  var bar = document.querySelector('.callbar');
+  var heroCtas = document.querySelector('.hero-copy .ctas');
+  var formCtas = document.querySelector('#contacto .ctas');
+  if(bar && heroCtas && formCtas && 'IntersectionObserver' in window){
+    var seen = {hero:true, form:false};
+    var upd = function(){ var on = !seen.hero && !seen.form; bar.classList.toggle('on', on); bar.inert = !on; };
+    bar.inert = true;
+    new IntersectionObserver(function(es){ seen.hero = es[es.length-1].isIntersecting; upd(); }).observe(heroCtas);
+    new IntersectionObserver(function(es){ seen.form = es[es.length-1].isIntersecting; upd(); }).observe(formCtas);
+  } else if(bar){ bar.classList.add('on'); }
+
+  /* Aparición suave de las secciones al hacer scroll */
+  if('IntersectionObserver' in window && !reduce){
+    var targets = document.querySelectorAll('section h2, section .intro, .panel, .titan, .steps li, .gallery li, .towns, .faq details, .contact > div, .tips');
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
+    var idx = new Map();
+    targets.forEach(function(el){
+      var sib = el.parentElement ? [].filter.call(el.parentElement.children, function(c){ return c.tagName === el.tagName; }) : [];
+      var i = Math.min(sib.indexOf(el), 5);
+      if(el.matches('.steps li, .gallery li, .panel, .faq details')) el.style.setProperty('--d', (i % 4) * 90 + 'ms');
+      el.classList.add('rv'); io.observe(el);
+    });
+  }
 
   /* 4. Galería: ver foto en grande */
   var lb = document.getElementById('lightbox');
