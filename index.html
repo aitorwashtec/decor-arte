@@ -139,6 +139,14 @@ section h2{font-size:clamp(1.9rem,4.2vw,2.9rem);font-weight:800;margin-bottom:.8
 
 /* Servicios */
 .duo{display:grid;grid-template-columns:1fr 1fr;border-radius:14px;overflow:hidden}
+.svcs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem}
+.svc{display:block;padding:1.6rem clamp(1.1rem,2.5vw,1.8rem);border-radius:14px;background:var(--paper-2);text-decoration:none;transition:transform .2s,box-shadow .2s}
+.svc.big{background:var(--band);color:var(--band-ink)}
+.svc h3{font-size:clamp(1.35rem,2.6vw,1.85rem);font-weight:800}
+.svc p{margin:.5rem 0 1rem;opacity:.85;max-width:32ch}
+.svc b{font-weight:600;border-bottom:2px solid var(--accent)}
+@media (hover:hover){.svc:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(0,0,0,.18)}}
+@media (max-width:640px){.svcs{grid-template-columns:1fr}}
 .panel{padding:2.4rem clamp(1.25rem,3vw,2.6rem) 1.6rem}
 .panel.deco{background:var(--paper-2)}
 .panel.indus{background:var(--band);color:var(--band-ink)}
@@ -237,6 +245,7 @@ form .btn{justify-self:start}
 .tips ul{margin:0;padding-left:1.15rem;color:var(--ink-soft)}
 .tips li{margin:.4rem 0}
 footer{border-top:1px solid var(--line);padding:2.5rem 0 6.5rem;color:var(--ink-soft);font-size:.93rem}
+.foot-links{display:flex;flex-wrap:wrap;gap:.3rem 1.1rem;flex-basis:100%;order:3}.titan a{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px;color:var(--ink)}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem}
 .foot-mark{font:400 1.5rem/1 "Rye","Rockwell",Georgia,serif;color:var(--ink)}
 
@@ -343,7 +352,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
 
     <div class="hero-copy">
       <h1>Pintura decorativa e industrial en Pamplona</h1>
-      <p class="lead">Pisos, locales, naves y fachadas con acabado limpio. Visitamos la obra sin compromiso y te damos el presupuesto antes de empezar.</p>
+      <p class="lead">Más de 20 años pintando pisos, locales, naves y fachadas con acabado limpio. Visitamos la obra sin compromiso y te damos el presupuesto antes de empezar.</p>
       <div class="ctas">
         <a class="btn primary" href="tel:+34637546661">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
@@ -362,32 +371,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
 <section id="servicios" style="padding-top:1rem">
   <div class="wrap">
     <h2>Qué pintamos</h2>
-    <p class="intro">Desde un dormitorio hasta una nave entera. Protegemos suelos y muebles y lo dejamos todo recogido al terminar.</p>
-    <div class="duo">
-      <div class="panel deco">
-        <h3>Pintura decorativa</h3>
-        <p>Para viviendas, comunidades y locales que quieren verse bien.</p>
-        <ul>
-          <li>Pisos y viviendas<span>Paredes, techos y habitaciones completas.</span></li>
-          <li>Quitar gotelé y alisar<span>Paredes lisas listas para pintar.</span></li>
-          <li>Lacado de puertas y muebles<span>Renovar sin cambiar.</span></li>
-          <li>Papel pintado y estucos<span>Acabados con textura y carácter.</span></li>
-          <li>Fachadas y comunidades<span>Pintura exterior que aguanta el clima de Navarra.</span></li>
-        </ul>
-      </div>
-      <div class="panel indus">
-        <h3>Pintura industrial</h3>
-        <p>Para naves, talleres y obras donde el acabado tiene que aguantar.</p>
-        <ul>
-          <li>Naves y locales comerciales<span>Paredes y techos de gran superficie.</span></li>
-          <li>Suelos de resina y epoxi<span>Resistentes al tráfico y a la limpieza.</span></li>
-          <li>Estructuras metálicas<span>Protección contra óxido y desgaste.</span></li>
-          <li>Señalización de zonas<span>Líneas, pasillos y áreas de seguridad.</span></li>
-          <li>Mantenimiento periódico<span>Repasos para que todo siga como nuevo.</span></li>
-        </ul>
-      </div>
+    <p class="intro">Más de 20 años pintando en Pamplona: desde un dormitorio hasta una nave entera. Protegemos suelos y muebles y lo dejamos todo recogido al terminar.</p>
+    <div class="svcs">
+      <a class="svc big" href="/pintores-comunidades-pamplona/"><h3>Comunidades de vecinos</h3><p>Portales, escaleras, garajes y fachadas.</p><b>Ver más →</b></a>
+      <a class="svc big" href="/pintura-industrial-empresas-pamplona/"><h3>Empresas e industria</h3><p>Naves, talleres, locales, suelos y mantenimiento.</p><b>Ver más →</b></a>
+      <a class="svc" href="/pintores-pisos-pamplona/"><h3>Pisos y viviendas</h3><p>Paredes, techos y quitar gotelé.</p><b>Ver más →</b></a>
+      <a class="svc" href="/pintura-fachadas-pamplona/"><h3>Fachadas</h3><p>Pintura exterior para el clima de Navarra.</p><b>Ver más →</b></a>
     </div>
-    <p class="titan">Trabajamos con <b>pinturas Titan</b>: plásticas lavables, esmaltes y sistemas para fachada e industria.</p>
+    <p class="titan">Trabajamos con <b>pinturas Titan</b>: plásticas lavables, esmaltes y sistemas para fachada e industria. También <a href="/lacado-puertas-muebles-pamplona/">lacamos puertas y muebles</a>.</p>
   </div>
 </section>
 
@@ -559,6 +550,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
   <div class="wrap">
     <span class="foot-mark">Decor’arte</span>
     <span>Carlos Aguilera Montoro, pintura decorativa e industrial en Pamplona</span>
+    <nav class="foot-links" aria-label="Servicios"><a href="/pintores-comunidades-pamplona/">Comunidades</a> <a href="/pintura-industrial-empresas-pamplona/">Empresas e industria</a> <a href="/pintores-pisos-pamplona/">Pisos</a> <a href="/pintura-fachadas-pamplona/">Fachadas</a> <a href="/lacado-puertas-muebles-pamplona/">Lacado</a></nav>
     <a href="/aviso-legal/">Aviso legal y privacidad</a>
   </div>
 </footer>
@@ -693,7 +685,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
 
   /* Aparición suave de las secciones al hacer scroll */
   if('IntersectionObserver' in window && !reduce){
-    var targets = document.querySelectorAll('section h2, section .intro, .panel, .titan, .steps li, .gallery li, .towns, .faq details, .contact > div, .tips');
+    var targets = document.querySelectorAll('section h2, section .intro, .svc, .panel, .titan, .steps li, .gallery li, .towns, .faq details, .contact > div, .tips');
     var io = new IntersectionObserver(function(es){
       es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
     }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
